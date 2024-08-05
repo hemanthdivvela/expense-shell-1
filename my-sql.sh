@@ -4,6 +4,7 @@ source ./comman.sh
 
 check_root()
 
+
 dnf install mysql-server -y &>>$LOGFILE
 VALIDATA $? "Installing mysql Server"
 
@@ -25,3 +26,4 @@ then
 else
     echo -e "Mysql root password is already setup..$Y SkIPPING $N"
 fi
+
